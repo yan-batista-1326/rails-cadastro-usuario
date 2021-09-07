@@ -1,3 +1,6 @@
-<%= notice %>
-<p><%= "#{@user.nome} mora em #{@user.bairro}, na rua #{@user.rua}, nº #{@user.numero}, #{@user.complemento}." %></p>
-<%= link_to "Voltar", users_path %>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @user.nome %></h1>
+  <p class="lead"><%= "Endereço: #{@user.nome} mora em #{@user.bairro}, na rua #{@user.rua}, nº #{@user.numero}, #{@user.complemento}." %></p>
+  <hr class="my-4">
+  <%= link_to "Voltar", users_path, class: "btn btn-primary btn-lg"%>
+</div>
