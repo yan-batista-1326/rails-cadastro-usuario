@@ -1,0 +1,25 @@
+<%= form_with(model: @user) do |form| %>
+    <div>
+        <%= form.text_field :nome, placeholder: "Nome" %>
+    </div>
+
+    <div>
+        <%= form.text_field :rua, placeholder: "Rua" %>
+    </div>
+
+    <div>
+        <%= form.text_field :bairro, placeholder: "Bairro" %>
+    </div>
+
+    <div>
+        <%= form.number_field :numero, placeholder: "Numero" %>
+    </div>
+
+    <div>
+        <%= form.text_field :complemento, placeholder: "Complemento" %>
+    </div>
+
+    <div>
+        <%= form.submit "Salvar" %>
+    </div>
+<% end %>
