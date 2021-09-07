@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1 class="display-4"><%= @user.nome %></h1>
-  <p class="lead"><%= "Endereço: #{@user.nome} mora em #{@user.bairro}, na rua #{@user.rua}, nº #{@user.numero}, #{@user.complemento}." %></p>
+  <p class="lead"><%= "Endereço: #{@user.nome} na rua #{@user.rua}, nº #{@user.numero}, #{@user.bairro}. #{@user.cidade} - #{@user.estado.upcase}." %></p>
   <hr class="my-4">
   <%= link_to "Voltar", users_path, class: "btn btn-primary btn-lg"%>
 </div>

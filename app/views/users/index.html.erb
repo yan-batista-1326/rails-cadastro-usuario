@@ -6,9 +6,10 @@
       <th scope="col">#</th>
       <th scope="col">Nome</th>
       <th scope="col">Rua</th>
-      <th scope="col">Bairro</th>
       <th scope="col">Número</th>
-      <th scope="col">Complemento</th>
+      <th scope="col">Bairro</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">Estado</th>
       <th scope="col" colspan="3">Ações</th>
     </tr>
   </thead>
@@ -18,9 +19,10 @@
             <td><%= user.id %></td>
             <td><%= user.nome %></td>
             <td><%= user.rua %></td>
-            <td><%= user.bairro %></td>
             <td><%= user.numero %></td>
-            <td><%= user.complemento %></td>
+            <td><%= user.bairro %></td>
+            <td><%= user.cidade %></td>
+            <td><%= user.estado.upcase %></td>
             <td><%= link_to "Visualizar", user %></td>
             <td><%= link_to "Editar", edit_user_path(user) %></td>
             <td><%= link_to "Apagar", user, method: :delete,  data: {confirm: "Tem certeza que deseja excluir esse usuário?"}%></td>

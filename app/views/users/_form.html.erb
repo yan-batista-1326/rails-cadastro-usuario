@@ -8,16 +8,20 @@
         <label for="floatingInput">Rua</label>
     </div>
     <div class="form-floating mb-3">
-        <%= form.text_field :bairro, placeholder: "Bairro", class: "form-control" %>
-        <label for="floatingInput">Bairro</label>
-    </div>
-    <div class="form-floating mb-3">
         <%= form.number_field :numero, placeholder: "Número", class: "form-control" %>
         <label for="floatingInput">Número</label>
     </div>
     <div class="form-floating mb-3">
-        <%= form.text_field :complemento, placeholder: "Complemento", class: "form-control" %>
-        <label for="floatingInput">Complemento</label>
+        <%= form.text_field :bairro, placeholder: "Bairro", class: "form-control" %>
+        <label for="floatingInput">Bairro</label>
+    </div>
+    <div class="form-floating mb-3">
+        <%= form.text_field :cidade, placeholder: "Cidade", class: "form-control" %>
+        <label for="floatingInput">Cidade</label>
+    </div>
+    <div class="form-floating mb-3">
+        <%= form.text_field :estado, placeholder: "Estado", class: "form-control" %>
+        <label for="floatingInput">Estado</label>
     </div>
 
     <div>
